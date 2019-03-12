@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>San Angelico Museum of Contemporary Art</title>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    #homeBanner {
+      width: 100%;
+    }
+    
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner {
+      display: block;
+      width: 100%;
+    }
+    
+    #qrcode {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #map2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 320px;
+      height: 320px;
+    }
+      #secondaryPage_img{
+          width: 100%;
+      }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div id="homeScreen" data-role="page">
+    <div class="app">
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                <p class="battery-status">LOOK</p>
+            </div>
+        </div>
+    <img src="imgs/main_banner.jpg" class="banner" />
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+        <li><a href="#currentExhibits">Current Exhibits</a></li>
+        <li><a href="#pastExhibits">Past Exhibits</a></li>
+        <li><a href="">Calendar of Events</a></li>
+        <li><a href="#discoverScreen">[ Discover ]</a></li>
+        <li><a href="#secondaryPage1">Secondary Page 1</a></li>
+        <li><a href="#secondaryPage2">Secondary Page 2</a></li>
+
+      </ul>
+      <div class="ui-grid-a center">
+        <div class="ui-block-a">
+          <a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+        </div>
+        <div class="ui-block-b">
+          <a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="currentExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Current Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/Westhoff_thumb.png">
+            <h2>Siobhan Westhoff</h2>
+            <p>Final Weeks</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/101733188_thumb.png">
+            <h2>RED</h2>
+            <p>Eleanor Friosh</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/106588354_thumb.png">
+            <h2>Imbalanced</h2>
+            <p>Simone Best, Sheldon Crane, and Elizabeth Moore</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/924520721_thumb.png">
+            <h2>Morten Rand-Hendriksen</h2>
+            <p>The Untitled Collection</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Vision_thumb.png">
+            <h2>VISION</h2>
+            <p>New Works from the SAMOCA Permanent Collection</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Watching_thumb.png">
+            <h2>Paul Shellmont: Bird Watching</h2>
+            <p>Upcoming Exhibition</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="pastExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Past Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/GroundSwell_thumb.png">
+            <h2>Groundswell: Design Series II</h2>
+            <p> </p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Buildings_thumb.png">
+            <h2>Reflections on Architecture: Imagining Buildings</h2>
+            <p> </p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="mapScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Location</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">San Angelico Museum of Contemporary Art</h2>
+      <p class="center">321 Elm Street Spokane, WA 99201
+        <br>(800)555-1212</p>
+      <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=321%20elm%20st%20spokane+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div><br />
+    </div>
+  </div>
+
+  <div id="discoverScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <img id="qrcode" src="imgs/qr.png" />
+      <h3 class="center">Discover More Exciting Stories</h3>
+      <p class="center">Any time you see this QR code, scan it using the Discover button to see additional content from SAMOCA.</p>
+      <a id="qrScanBtn" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search">Discover</a>
+    </div>
+  </div>
+
+  <div id="aboutScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>About Page</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">Here's a Heading About Some Stuff</h2>
+      <h3 class="center">A Nice Sub Heading</h3>
+      <img class="center banner" src="imgs/about_img.jpg" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Pulvinar mattis nunc sed blandit. At auctor urna nunc id cursus metus aliquam. A condimentum vitae sapien pellentesque habitant morbi tristique. Cursus eget nunc scelerisque viverra. Condimentum vitae sapien pellentesque habitant morbi. Aliquam eleifend mi in nulla posuere sollicitudin. Aenean sed adipiscing diam donec adipiscing. In fermentum posuere urna nec tincidunt. Enim diam vulputate ut pharetra sit amet aliquam.</p>
+
+      <p>Odio morbi quis commodo odio aenean. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Sed sed risus pretium quam vulputate dignissim suspendisse in. Fames ac turpis egestas sed. Tempus quam pellentesque nec nam aliquam sem et tortor. Porttitor rhoncus dolor purus non enim. Sollicitudin tempor id eu nisl nunc. Pharetra et ultrices neque ornare. Amet consectetur adipiscing elit duis. Massa enim nec dui nunc mattis enim ut tellus elementum. Sed sed risus pretium quam vulputate dignissim. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. In eu mi bibendum neque egestas congue quisque egestas. Mi bibendum neque egestas congue quisque egestas diam in.</p>
+
+      <p>Auctor augue mauris augue neque gravida in fermentum. Massa vitae tortor condimentum lacinia quis vel. Nisl purus in mollis nunc sed id semper risus in. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Sed turpis tincidunt id aliquet risus feugiat in ante. Enim tortor at auctor urna nunc id cursus metus aliquam. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Ut aliquam purus sit amet luctus. Sed adipiscing diam donec adipiscing tristique risus nec. Amet purus gravida quis blandit turpis cursus in. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Euismod quis viverra nibh cras pulvinar mattis. Auctor augue mauris augue neque gravida in fermentum. Sed id semper risus in hendrerit gravida rutrum quisque non. Magna ac placerat vestibulum lectus mauris ultrices eros.</p>
+      <p class="center">123 Main Street Ventura, CA 12345 (800) 555-1212</p>
+    </div>
+  </div>
+    
+      <div id="secondaryPage1" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Secondary Page 1</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+        <h1>List of Items</h1>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+  </div> 
+    
+    <div id="secondaryPage2" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Secondary Page 2</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+
+        <img id="secondaryPage_img" src="imgs/secondaryPage_img.jpg"/>
+        <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+
+    </div>
+  </div>
+  <!--
+	Admission
+	Directions
+	Parking
+	Hours
+	Volunteer
+	-->
+  <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+  </script>
+</body>
+
+</html>
